@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lrc_type">
+        <item>原版歌词</item>
+        <item>翻译歌词</item>
+        <item>所有歌词</item>
+    </string-array>
+	
+	<string-array name="lrc_combine">
+		<item>隔行,原版歌词在前</item>
+		<item>隔行,翻译歌词在前</item>
+		<item>并行,原版歌词在前</item>
+		<item>并行,翻译歌词在前</item>
+	</string-array>
+</resources>
+	

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:id="@+id/main_layout"
+	style="@style/AppTheme">
+
+	<RelativeLayout
+		android:layout_height="50dp"
+		android:layout_width="match_parent"
+		android:id="@+id/mainRelativeLayout1">
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:text="Run"
+			android:layout_alignParentLeft="true"
+			android:id="@+id/run_button"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:text="Option"
+			android:layout_alignParentRight="true"
+			android:id="@+id/option_button"
+			android:onClick="OnOptionButtonClick"/>
+
+	</RelativeLayout>
+
+	<ListView
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/mainRelativeLayout1"
+		android:id="@+id/main_list"/>
+
+</RelativeLayout>
+

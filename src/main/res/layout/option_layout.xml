@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:id="@+id/option_layout"
+	android:windowNoTitle="true"
+	android:background="#E5E5E5">
+
+	<RelativeLayout
+		android:layout_height="50dp"
+		android:layout_width="match_parent"
+		android:background="#1D9DFF"
+		android:id="@+id/optionlayoutRelativeLayout1">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="设置"
+			android:textSize="25sp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="20dp"
+			android:id="@+id/optionlayoutTextView1"
+			android:textColor="#E5E5E5"
+			android:textAlignment="textStart"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="match_parent"
+			android:layout_width="75dp"
+			android:text="确定"
+			android:textColor="#1D9DFF"
+			android:layout_alignParentRight="true"
+			android:background="#E5E5E5"
+			android:textAlignment="center"
+			android:id="@+id/save_button"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:text="\?"
+			android:layout_toLeftOf="@id/save_button"
+			android:textSize="30sp"
+			android:textColor="#E5E5E5"
+			android:textStyle="bold"/>
+
+	</RelativeLayout>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:text="Load files from :"
+		android:layout_below="@id/optionlayoutRelativeLayout1"
+		android:textColor="#1D9DFF"
+		android:id="@+id/optionlayoutTextView2"
+		android:layout_marginLeft="15dp"
+		android:layout_marginTop="15dp"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_below="@id/optionlayoutTextView2"
+		android:textColor="#000000"
+		android:layout_alignLeft="@id/optionlayoutTextView2"
+		android:layout_marginRight="15dp"
+		android:hint="example : /sdcard/Netease/Lyric/"
+		android:background="#B1DEFF"
+		android:maxLines="1"
+		android:lines="1"
+		android:textColorHint="#787878"
+		android:textSize="14sp"
+		android:id="@+id/load_path_text"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:text="Save lrc file to :"
+		android:textColor="#1D9DFF"
+		android:id="@+id/optionlayoutTextView3"
+		android:layout_marginLeft="15dp"
+		android:layout_marginTop="15dp"
+		android:layout_below="@id/load_path_text"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_below="@id/optionlayoutTextView3"
+		android:textColor="#000000"
+		android:layout_alignLeft="@id/optionlayoutTextView3"
+		android:layout_marginRight="15dp"
+		android:hint="example : /sdcard/Music/Lyric/"
+		android:background="#B1DEFF"
+		android:maxLines="1"
+		android:lines="1"
+		android:textColorHint="#787878"
+		android:textSize="14sp"
+		android:id="@+id/save_path_text"/>
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:layout_below="@id/save_path_text"
+		android:layout_margin="15dp"
+		android:id="@+id/opt_layout">
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="总是从网上获取歌曲信息"
+			android:textColor="#1D9DFF"
+			android:shadowColor="#000000"
+			android:id="@+id/check_forcegettagfromnet"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/check_forcegettagfromnet"
+			android:layout_marginTop="10dp"
+			android:text="总是从网上获取歌曲歌词"
+			android:textColor="#1D9DFF"
+			android:id="@+id/check_forcegetlrcfromnet"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/check_forcegetlrcfromnet"
+			android:layout_marginTop="10dp"
+			android:text="普通歌曲信息写入歌词文件"
+			android:textColor="#1D9DFF"
+			android:id="@+id/check_normaltag"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/check_normaltag"
+			android:layout_marginTop="10dp"
+			android:text="网易云音乐信息写入歌词文件"
+			android:textColor="#1D9DFF"
+			android:id="@+id/check_extratag"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:text="要写入的歌词的类型"
+			android:layout_below="@id/check_extratag"
+			android:layout_marginTop="10dp"
+			android:id="@+id/optionlayoutTextView4"
+			android:textColor="#1D9DFF"
+			android:textSize="15sp"/>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/optionlayoutTextView4"
+			android:id="@+id/lleu"
+			android:layout_alignRight="@id/check_extratag">
+
+			<Spinner
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:id="@+id/lrc_type"
+				android:entries="@array/lrc_type"
+				android:popupBackground="#E5E5E5"/>
+
+		</RelativeLayout>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:text="要合并的歌词的方式"
+			android:layout_below="@id/lleu"
+			android:layout_marginTop="10dp"
+			android:id="@+id/TextView5"
+			android:textColor="#1D9DFF"
+			android:textSize="15sp"/>
+
+		<Spinner
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/TextView5"
+			android:layout_alignParentLeft="true"
+			android:layout_alignRight="@id/check_extratag"
+			android:id="@+id/spn_lrc_combine"
+			android:entries="@array/lrc_combine"
+			android:popupBackground="#E5E5E5"
+			android:layout_alignParentBottom="false"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

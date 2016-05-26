@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:id="@+id/lrc_layout"
+	android:windowNoTitle="true"
+	android:background="#FFFFFF"
+	android:alpha="0.85">
+
+	<RelativeLayout
+		android:layout_height="50dp"
+		android:layout_width="match_parent"
+		android:background="#1D9DFF"
+		android:id="@+id/main_lrc_layout">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="N/A"
+			android:textSize="15sp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="20dp"
+			android:id="@+id/file_name_text"
+			android:textColor="#E5E5E5"
+			android:textAlignment="textStart"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="match_parent"
+			android:layout_width="75dp"
+			android:text="返回"
+			android:textColor="#1D9DFF"
+			android:layout_alignParentRight="true"
+			android:background="#FFFFFF"
+			android:textAlignment="center"
+			android:id="@+id/lyric_back"/>
+
+	</RelativeLayout>
+
+	<TextView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:text="fdeegghbnnnqw"
+		android:layout_below="@id/main_lrc_layout"
+		android:textSize="20sp"
+		android:scrollbars = "vertical"
+		android:id="@+id/lrc_text"/>
+
+</RelativeLayout>
+
